@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hi It's Me!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(189, 160, 110);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .top-rectangle {
+            width: 100%;
+            height: 100px;
+            background-color: rgb(27, 63, 23);
+            color: rgb(189, 160, 110);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 60px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: rgb(27, 63, 23);
+        }
+
+        p {
+            font-size: 12px;
+            color: rgb(27, 63, 23);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #e1c997;
+            color: rgb(156, 89, 89);
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #005f73;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            margin-top: 100px;
+        }
+
+        .styled-img {
+            width: 255px;
+            border-radius: 15px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .middle-text {
+            max-width: 220px;
+            font-size: 33px;
+            color: #333;
+            font-family: 'Georgia', serif;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        .round-images-container {
+            position: relative;
+            width: 100%;
+            height: 550px;
+            margin-top: 100px;
+        }
+
+        .round-img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+        }
+
+        .top-left {
+            top: 0;
+            left: 100px;
+        }
+
+        .bottom-right {
+            top: 120px;
+            right: 100px;
+        }
+
+        .cat-caption {
+            position: absolute;
+            top: 180px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 33px;
+            font-family: 'Georgia', serif;
+            color: #333;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Divider before book section */
+        .section-divider {
+            margin: 100px auto 60px;
+            text-align: center;
+        }
+
+        .section-divider hr {
+            border: none;
+            height: 4px;
+            background-color: rgb(27, 63, 23);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section-divider h2 {
+            margin-top: -28px;
+            background-color: rgb(189, 160, 110);
+            display: inline-block;
+            padding: 0 20px;
+            font-size: 36px;
+            font-family: 'Georgia', serif;
+            color: #333;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Book image and text section */
+        .cozy-scene-row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 50px;
+            margin: 100px 0;
+            padding-left: 80px;
+            max-width: 1200px;
+        }
+
+        .cozy-img {
+            width: 400px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+        }
+
+        .cozy-text {
+            max-width: 400px;
+            font-size: 32px;
+            font-family: 'Georgia', serif;
+            color: #333;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-rectangle">
+        Welcome Here! just a test
+    </div>
+
+    <h1>Another testinnggg!</h1>
+    <p>just me trying out some cute pics.</p>
+
+    <!-- IMAGE + TEXT + IMAGE layout -->
+    <div class="image-row">
+        <img src="rabbit.jpg" alt="Rabbit image" class="styled-img">
+        <div class="middle-text">
+            This is a rabbit with berries and some flowers.
+        </div>
+        <img src="flowerrs.jpg" alt="Flowers image" class="styled-img">
+    </div>
+
+    <!-- ROUND IMAGES below the main image row -->
+    <div class="round-images-container">
+        <img src="cutecat.jpg" alt="Top left round image" class="round-img top-left">
+        <img src="anothercutecat.jpg" alt="Bottom right round image" class="round-img bottom-right">
+        <div class="cat-caption">two cute cats</div>
+    </div>
+
+    <!-- SECTION DIVIDER with "Story Time" -->
+    <div class="section-divider">
+        <hr>
+        <h2>Story Time</h2>
+    </div>
+
+    <!-- Book image + text section -->
+    <div class="cozy-scene-row">
+        <img src="book.jpg" alt="book next to fire" class="cozy-img">
+        <div class="cozy-text">
+            Once upon a time, a little bird named Pip was flying South for the winter. He flew and flew, but he got
+            lost! He landed on a big, warm rock. A friendly squirrel saw Pip and offered him some acorns. Pip happily
+            ate them and the squirrel showed him the way. Pip thanked the squirrel and flew on, happy and full of
+            acorns.
+        </div>
+    </div>
+
+</body>
+
+</html>
